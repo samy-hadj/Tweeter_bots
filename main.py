@@ -25,7 +25,6 @@ auth.set_access_token(access_token, access_token_secret)
 
 # Création de l'objet API
 api = tweepy.API(auth)
-
 # Test pour s'assurer que l'authentification a réussi
 try:
     api.verify_credentials()
@@ -38,7 +37,7 @@ with open("api_info.txt", "w") as f:
     print("API Methods and Attributes: ", file=f)
     print(dir(api), file=f)
 
-# Optionnel: Afficher la documentation de l'API
+# # Optionnel: Afficher la documentation de l'API
 print("Les informations sur l'API ont été enregistrées dans le fichier api_info.txt.")
 
 # Récupération des Tweets de l'utilisateur spécifié
